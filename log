@@ -4,3 +4,21 @@ Sun Mar 22 08:42:58 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 6ae8339
+Sun Mar 22 08:44:46 PM UTC 2026: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘!=’ token
+   61 |    for(int * i = first(L), i != NULL; i = next(L)){
+      |                              ^~
+exercises.c:61:39: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   61 |    for(int * i = first(L), i != NULL; i = next(L)){
+      |                                       ^
+exercises.c:61:50: error: expected ‘;’ before ‘)’ token
+   61 |    for(int * i = first(L), i != NULL; i = next(L)){
+      |                                                  ^
+      |                                                  ;
+cc1: all warnings being treated as errors
+2c483ec
