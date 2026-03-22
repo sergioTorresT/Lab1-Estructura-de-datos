@@ -90,3 +90,23 @@ exercises.c:138:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 578220a
+Sun Mar 22 08:58:54 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:128:34: error: lvalue required as left operand of assignment
+  128 |             if((c == ')' && *aux = '(') || (c == ']' && *aux = '[') || (c == '}' && *aux = '{')){
+      |                                  ^
+exercises.c:128:62: error: lvalue required as left operand of assignment
+  128 |             if((c == ')' && *aux = '(') || (c == ']' && *aux = '[') || (c == '}' && *aux = '{')){
+      |                                                              ^
+exercises.c:128:90: error: lvalue required as left operand of assignment
+  128 |             if((c == ')' && *aux = '(') || (c == ']' && *aux = '[') || (c == '}' && *aux = '{')){
+      |                                                                                          ^
+exercises.c:138:1: error: control reaches end of non-void function [-Werror=return-type]
+  138 | }
+      | ^
+cc1: all warnings being treated as errors
+81c59f8
