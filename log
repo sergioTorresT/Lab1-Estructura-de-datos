@@ -46,3 +46,16 @@ Sun Mar 22 08:48:16 PM UTC 2026:
  tests:  3|2
 total_score: 40/70
 4e88368
+Sun Mar 22 08:51:59 PM UTC 2026: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:97:25: error: expected ‘;’ before ‘}’ token
+   97 |       push(aux, pop(P1))
+      |                         ^
+      |                         ;
+   98 |    }
+      |    ~                     
+077a496
