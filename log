@@ -65,3 +65,28 @@ Sun Mar 22 08:52:15 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 3735441
+Sun Mar 22 08:58:38 PM UTC 2026: 
+ exercises.c | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:114:19: error: implicit declaration of function ‘create_Stack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+  114 |    Stack* stack = create_Stack();
+      |                   ^~~~~~~~~~~~
+      |                   create_stack
+exercises.c:114:19: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+exercises.c:128:34: error: lvalue required as left operand of assignment
+  128 |             if((c == ')' && *aux = '(') || (c == ']' && *aux = '[') || (c == '}' && *aux = '{')){
+      |                                  ^
+exercises.c:128:62: error: lvalue required as left operand of assignment
+  128 |             if((c == ')' && *aux = '(') || (c == ']' && *aux = '[') || (c == '}' && *aux = '{')){
+      |                                                              ^
+exercises.c:128:90: error: lvalue required as left operand of assignment
+  128 |             if((c == ')' && *aux = '(') || (c == ']' && *aux = '[') || (c == '}' && *aux = '{')){
+      |                                                                                          ^
+exercises.c:138:1: error: control reaches end of non-void function [-Werror=return-type]
+  138 | }
+      | ^
+cc1: all warnings being treated as errors
+578220a
